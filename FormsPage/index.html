@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> 
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div id="titleArea">
+            <h1 id="title"> Request for Spell</h1>
+            <p id="description">Request a spell from your local magician. </p>
+        </div>
+        <section id="formSection">
+            
+            <form id="survey-form">
+                <div class="formElement">
+                    <label for="name" id="name-label" class="formInfo">Name:</label>
+                    <input id="name" type="text" required placeholder="John Smith">
+                </div>
+                <div class="formElement">
+                    <label for="email" id="email-label" class="formInfo">Email:</label>
+                    <input id="email" type="email" required placeholder="john@example.com">
+                </div>
+                <div class="formElement">
+                    <label for="number" id="number-label" class="formInfo">Amount of gold peices you can pay:</label>
+                    <input type="number" id="number" min=0 max=100 placeholder="1">
+                </div>
+                <div class="formElement">
+                    <label for="dropdown" id="dropdown-label" class="formInfo">Type Of Magic:</label>
+                    <select id="dropdown">
+                        <option value="Love">Love</option>
+                        <option value="Revenge">Revenge</option>
+                        <option value="Power">Power</option>
+                        <option value="Transformation">Transformation</option>
+                    </select>
+                </div>
+                <div class="formElement">
+                    <p class="formInfo">Spell Duration:</p>
+                    <label class="checkLabel">
+                        <input type="radio" name="spell-duration" value="hou">
+                        1 Hour
+                    </label>
+                    <label class="checkLabel">
+                        <input type="radio" name="spell-duration" value="day">
+                        1 Day
+                    </label>
+                    <label class="checkLabel">
+                        <input type="radio" name="spell-duration" value="year">
+                        1 Year
+                    </label>
+                </div>
+                <div class="formElement">
+                    <p class="formInfo"> How did you hear about your local Magician?</p>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="friend">
+                        A Friend
+                    </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="town_crier">
+                        Town Crier
+                    </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="poster">
+                        Poster
+                    </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="previous">
+                        Previous Encounter (good or bad)
+                    </label>
+                </div>
+                <div class="formElement">
+                    <p class="formInfo">Comments:</p>
+                    <textarea class="comments"></textarea>
+                </div>
+                <div class="formElement">
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    
+</body>
+
+</html>

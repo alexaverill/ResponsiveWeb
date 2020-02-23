@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet"> 
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #5eaec1;
+            /* background-color: #7cc6fe; 
+            color: #223843; */
+            font-family:'Roboto';
+            color:#272727;
+        }
+        h1{
+            font-family:'Lato';
+        }
+        #main{
+            margin:0 10em 0 10em;
+            /*margin:5em;*/
+            background-color: #cde5fa;
+        }
+        #titleSection {
+            margin-top: 0;
+            padding:.5em 1em 1em 1em;
+
+            height: 5em;
+        }
+        figcaption{
+            padding:.1em 1em 0 1em;
+            font-size: 1.3em;
+        }
+        #title {
+            font-size: 3em;
+            color: #223843;
+        }
+
+        #img-div {
+            /*background-color: #aecfdf;*/
+            padding: 2em;
+            border-radius: .5em;
+        }
+
+        #image {
+            display: block;
+            margin: auto;
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+        }
+
+        #img-caption {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        #tribute-info {
+            /* background-color: #49c6e5; */
+            display:flex;
+            flex-direction: column;
+           
+            justify-content: center;
+            align-items: center;
+            font-size:1.5em;
+            text-align: left;
+            padding:0 1.5em 0 1.5em;
+            /* padding: 10em;
+            margin-bottom: 4em; */
+        }
+
+        #timeline {
+            margin:5em;
+            display: grid;
+            height:80vh;
+            grid-template-columns: 1em auto;
+            grid-template-rows:1.75fr 1fr 2fr .75fr .1fr .5fr auto;
+            grid-column-gap:1em;
+            justify-content: end;
+        }
+        .timelineBar{
+            width:1em;
+            background-color: black;
+            grid-column: 1/2;
+            grid-row: 1/all;
+            border-radius: 1em;
+        }
+        .timelineItem{
+            grid-column: 2/3;
+        }
+        .infoLink{
+            padding:1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        <section id="titleSection">
+            <h1 id="title">Don Test</h1>
+        </section>
+        <figure id="img-div">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bathyscaphe_Trieste_Piccard-Walsh.jpg/369px-Bathyscaphe_Trieste_Piccard-Walsh.jpg"
+                alt="Don Walsh in a submarine" id="image">
+            <figcaption id="img-caption">Don Walsh in a submarine</figcaption>
+        </figure>
+        <section id="tribute-info">
+            <section id="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </section>
+            <section id="timeline">
+                <div class="timelineBar"></div>
+                
+                    <div class="timelineItem">
+                        1960 Born
+                    </div>
+                    <div class="timelineItem">
+                        1978 Graduated High School
+                    </div>
+                    <div class="timelineItem">
+                        1982 Graduated College
+                    </div>
+                    <div class="timelineItem">
+                        1983 Joined Navy
+                    </div>
+                    <div class="timelineItem">
+                        1985 traversed Artic
+                    </div>
+                    <div class="timelineItem">
+                        1990  Founded Company
+                    </div>
+                    <div class="timelineItem">
+                        2000 Tested Submarine
+                    </div>
+                                   
+                
+            </section>
+            <div class="infoLink">
+            <a href="https://en.wikipedia.org/wiki/Don_Walsh" id="tribute-link" target="_blank">Don Walsh's
+                Wikipedia</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
