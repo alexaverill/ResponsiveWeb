@@ -1,18 +1,152 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-        
-        </style>
-    </head>
-    <h1 id="title"> Magic Forms</h1>
-    <p id="description">Magic forms will determine your destiny</p>
-    <form id="survey-form">
-        <label for="name">Name:</label>
-        <input id="name" type="text">
-        <label for="email">Email:</label>
-        <input id="email" type="email">
 
-        
-    </form>
+<head>
+    <style>
+        body {
+            background-color: #f47724;
+        }
+
+        main {
+            background-color: #ede6e3;
+            margin: 1em 1em 1em 1em;
+            border-radius: .75em;
+            box-shadow: 4px 2px 1px rgba(0,0,0,.5);
+        }
+        #formSection{
+            margin: auto;
+            display: block;
+            width:60%;
+        }
+        #titleArea{
+            margin:auto;
+            width:70%;
+            text-align: center;
+            display: block;
+        }
+        .formElement {
+            padding: 1em 0 1em 0;
+        }
+        form{
+            padding-bottom:1em;
+        }
+        h1{
+            font-size:3em;
+            padding-top:1em;
+        }
+        label {
+            padding: 0 0 1em 0;
+            display:block;
+        }
+
+        input,
+        select {
+            height: 2em;
+            
+            /*background-color: #e6e6ea;
+            color:#2f4550;
+            border-radius: 1em;*/
+        }
+        input[type=email],input[type=number],input[type=text]{
+            width:80%;
+        }
+        input[type=radio],
+        input[type=checkbox] {
+            height: 1em;
+        }
+
+        textarea {
+            width: 100%;
+            height: 10vh;
+        }
+
+        .checkLabel {
+            display: block;
+            padding: .5em 0 .5em 0;
+        }
+        .formInfo{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div id="titleArea">
+            <h1 id="title"> Request for Spell</h1>
+            <p id="description">Request a spell from your local magician. </p>
+        </div>
+        <section id="formSection">
+            
+            <form id="survey-form">
+                <div class="formElement">
+                    <label for="name" id="name-label" class="formInfo">Name:</label>
+                    <input id="name" type="text" required placeholder="John Smith">
+                </div>
+                <div class="formElement">
+                    <label for="email" id="email-label" class="formInfo">Email:</label>
+                    <input id="email" type="email" required placeholder="john@example.com">
+                </div>
+                <div class="formElement">
+                    <label for="number" id="number-label" class="formInfo">Amount of gold peices you can pay:</label>
+                    <input type="number" id="number" min=0 max=100 placeholder="1">
+                </div>
+                <div class="formElement">
+                    <label for="dropdown" id="dropdown-label" class="formInfo">Type Of Magic:</label>
+                    <select id="dropdown">
+                        <option value="Love">Love</option>
+                        <option value="Revenge">Revenge</option>
+                        <option value="Power">Power</option>
+                        <option value="Transformation">Transformation</option>
+                    </select>
+                </div>
+                <div class="formElement">
+                    <p class="formInfo">Spell Duration:</p>
+                    <label class="checkLabel">
+                        <input type="radio" name="spell-duration" value="hou">
+                        1 Hour
+                    </label>
+                    <label class="checkLabel">
+                        <input type="radio" name="spell-duration" value="day">
+                        1 Day
+                    </label>
+                    <label class="checkLabel">
+                        <input type="radio" name="spell-duration" value="year">
+                        1 Year
+                    </label>
+                </div>
+                <div class="formElement">
+                    <p class="formInfo"> How did you hear about your local Magician?</p>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="friend">
+                        A Friend
+                    </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="town_crier">
+                        Town Crier
+                    </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="poster">
+                        Poster
+                    </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="refered" value="previous">
+                        Previous Encounter (good or bad)
+                    </label>
+                </div>
+                <div class="formElement">
+                    <p class="formInfo">Comments:</p>
+                    <textarea class="comments"></textarea>
+                </div>
+                <div class="formElement">
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
