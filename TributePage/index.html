@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #7cc6fe; 
+            color: #223843;
+        }
+        #main{
+            margin:5em;
+        }
+        #titleSection {
+            margin-top: 0;
+
+
+            height: 5em;
+        }
+
+        #title {
+            font-size: 3em;
+            color: #223843;
+        }
+
+        #img-div {
+            background-color: #aecfdf;
+            padding: 2em;
+            border-radius: .5em;
+        }
+
+        #image {
+            display: block;
+            margin: auto;
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+        }
+
+        #img-caption {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        #tribute-info {
+            background-color: #49c6e5;
+            display:flex;
+            flex-direction: column;
+            margin:auto;
+            justify-content: center;
+            align-items: center;
+            /* padding: 10em;
+            margin-bottom: 4em; */
+        }
+
+        #timeline {
+            width:10%;
+            margin:5em;
+            display: grid;
+            height:80vh;
+            grid-template-columns: 1em auto;
+            grid-template-rows:repeat(9,auto);
+        }
+        .timelineBar{
+            width:1em;
+            background-color: white;
+            grid-column: 1/2;
+            grid-row: 1/all;
+            border-radius: 1em;
+        }
+        .timelineItem{
+            grid-column: 2/3;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main">
+        <section id="titleSection">
+            <h1 id="title">Don Walsh</h1>
+        </section>
+        <figure id="img-div">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bathyscaphe_Trieste_Piccard-Walsh.jpg/369px-Bathyscaphe_Trieste_Piccard-Walsh.jpg"
+                alt="Don Walsh in a submarine" id="image">
+            <figcaption id="img-caption">Don Walsh in a submarine</figcaption>
+        </figure>
+        <section id="tribute-info">
+            <section id="text">
+            Don Walsh lorum ipsum
+        </section>
+            <section id="timeline">
+                <div class="timelineBar"></div>
+                
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                    <div class="timelineItem">
+                        Birth
+                    </div>
+                
+                
+            </section>
+            <div>
+            <a href="https://en.wikipedia.org/wiki/Don_Walsh" id="tribute-link" target="_blank">Don Walsh's
+                Wikipedia</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+<!-- <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+</html>
