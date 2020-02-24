@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --backgroundColor: #dce1de;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--backgroundColor);
+            font-family: 'Roboto';
+        }
+
+        .page {
+            display: flex;
+            flex-direction: row;
+        }
+
+        main {
+            margin-left: 30%;
+            margin-right: 10%;
+        }
+
+        header {
+            font-size: 2em;
+            font-family: 'Lato';
+            font-weight: 300;
+        }
+
+        .code {
+            background-color: #b7b6c2;
+            padding: 1em;
+            width: 90%;
+            border-radius: 5px;
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+
+        section {
+            margin-top: 4em;
+            padding-bottom: 2em;
+            border: solid black;
+            border-width: 0 0 1px 0;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            /* overflow: scroll; */
+            position: fixed;
+            width: 20%;
+            height: 100%;
+            background-color: var(--backgroundColor);
+            border-right: solid black;
+            border-width: 2.5px;
+            margin: 0;
+            padding: 1em;
+        }
+
+        .nav-title {
+            font-size: 1em;
+
+
+        }
+
+        .nav-link {
+            padding: 1em 1em 1em 1em;
+            border-bottom: solid black;
+            border-width: 1px;
+            text-decoration: none;
+            color: #444545;
+        }
+
+        @media(max-width: 800px) {
+            .page {
+                flex-direction: column;
+
+            }
+
+            main {
+                margin-top: 35%;
+            }
+
+            #navbar {
+                margin: 0em;
+                position: fixed;
+                height: 30%;
+                width: 100%;
+            }
+        }
+
+        @media(max-width:250px) {
+            main {
+                margin-top: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <nav id="navbar">
+            <header class="nav-title">Technical Documentation</header>
+            <a href="#topic_1" class="nav-link">Topic 1</a>
+            <a href="#topic_2" class="nav-link">Topic 2</a>
+            <a href="#topic_3" class="nav-link">Topic 3</a>
+            <a href="#topic_4" class="nav-link">Topic 4</a>
+            <a href="#topic_5" class="nav-link">Topic 5</a>
+        </nav>
+        <main id="main-doc">
+            <section id="topic_1" class="main-section">
+                <header>Topic 1</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="code">
+                    <code>
+                    let x=0;
+                </code>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </section>
+            <section id="topic_2" class="main-section">
+                <header>Topic 2</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="code">
+                    <code>
+                        let x=0;
+
+                        let y=10;
+
+                        function multiply(x,y){
+                            return x*y;
+                        }
+                    </code>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+
+            <section id="topic_3" class="main-section">
+                <header>Topic 3</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="code">
+                    <code>
+                    let x=0;
+                </code>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </section>
+            <section id="topic_4" class="main-section">
+                <header> Topic 4</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="code">
+                    <code>
+                        let x=0;
+                    </code>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </section>
+            <section id="topic_5" class="main-section">
+                <header>Topic 5</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="code">
+                    <code>
+                        let x=0;
+                    </code>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>More Resources</p>
+                <ol>
+                    <li>Resource 1</li>
+                    <li>Resource 2</li>
+                    <li>Resource 3</li>
+                    <li>Resource 4</li>
+                    <li>Resource 5</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
